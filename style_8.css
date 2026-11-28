@@ -307,17 +307,17 @@ html {
     transform: translateY(-5px);
 }
 
-.concours-card h3 {
-    font-size: 21px;
-    color: #1e3a8a;
+..concours-card h3 {
+    font-size: 26px;
+    color: #000000;
     margin-bottom: 8px;
 }
 
 .concours-card a {
-    color: #1d4ed8;
+    color: #1e3a8a;
     text-decoration: none;
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 21px;
+    font-weight: 700;
 }
 
 .concours-card a:hover {
