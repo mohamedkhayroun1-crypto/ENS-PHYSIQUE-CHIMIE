@@ -4,37 +4,39 @@
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-    padding: 35px 20px;
+    padding: 30px 20px;
     min-height: 150px;
-    background: rgba(15, 45, 80, 0.95);
+
+    background: rgba(15, 45, 80, 0.90);
     border: 1px solid #3b82f6;
     border-radius: 15px;
-    color: #ffffff;
+
+    color: white;
     text-align: center;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
     transition: 0.3s;
 }
 
 .concours-card:hover {
-    background: #1d4ed8;
+    background: rgba(29, 78, 216, 0.95);
     transform: translateY(-5px);
 }
 
 .concours-card h3 {
     font-size: 23px;
-    color: #ffffff;
+    color: white;
     font-weight: bold;
-    margin-bottom: 8px;
 }
 
-.concours-card a {
-    color: #ffffff;
+.concours-card a,
+.concours-card a:visited {
+    color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
 }
 
 .concours-card a:hover {
-    color: #bfdbfe;
-    text-decoration: underline;
+    color: #93c5fd;
 }
