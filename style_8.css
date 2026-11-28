@@ -288,3 +288,37 @@ html {
 .module-files a:hover {
     color: #60a5fa;
 }
+
+/* ===== CARTES CONCOURS ===== */
+.concours-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 15px;
+    background: rgba(15, 45, 80, 0.9);
+    border: 1px solid #3b82f6;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.concours-card:hover {
+    background: rgba(30, 70, 120, 0.95);
+    transform: translateY(-5px);
+}
+
+.concours-card h3 {
+    font-size: 21px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.concours-card a {
+    color: #bfdbfe;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.concours-card a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+}
