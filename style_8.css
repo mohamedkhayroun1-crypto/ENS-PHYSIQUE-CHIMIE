@@ -1,42 +1,72 @@
-/* ===== CARTES CONCOURS ===== */
-.concours-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    padding: 30px 20px;
-    min-height: 150px;
+```css
+/* =================================
+   GENERAL
+================================= */
 
-    background: rgba(15, 45, 80, 0.90);
-    border: 1px solid #3b82f6;
-    border-radius: 15px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
     color: white;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #06152e, #123e70, #071a35);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* =================================
+   BACKGROUND PHYSIQUE-CHIMIE
+================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(4, 20, 45, 0.45),
+            rgba(4, 20, 45, 0.6)
+        ),
+        url("background.svg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.9;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* =================================
+   HEADER
+================================= */
+
+header {
     text-align: center;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-    transition: 0.3s;
+    padding: 40px 20px;
+    background: rgba(3, 18, 40, 0.75);
+    border-bottom: 2px solid #3b82f6;
 }
 
-.concours-card:hover {
-    background: rgba(29, 78, 216, 0.95);
-    transform: translateY(-5px);
+header h1 {
+    font-size: 42px;
+    color: #60a5fa;
+    margin-bottom: 12px;
 }
 
-.concours-card h3 {
-    font-size: 23px;
-    color: white;
-    font-weight: bold;
-}
-
-.concours-card a,
-.concours-card a:visited {
-    color: white;
-    text-decoration: none;
+header p {
     font-size: 18px;
-    font-weight: bold;
+    color: #dbeafe;
 }
 
-.concours-card a:hover {
-    color: #93c5fd;
-}
+/* =================================
+   NAVIGATION
+================================= */
+
+nav {
